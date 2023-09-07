@@ -11,9 +11,6 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
-import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
-
-import com.example.demo.d1.PersonEntity;
 
 @SpringBootApplication(exclude = {Neo4jRepositoriesAutoConfiguration.class, Neo4jReactiveDataAutoConfiguration.class})
 public class Demo1Application {
