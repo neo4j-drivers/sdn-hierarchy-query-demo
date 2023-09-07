@@ -1,21 +1,13 @@
-package com.example.demo.d3;
+package com.example.demo.d4;
 
-import java.util.List;
-
-import org.springframework.data.annotation.Transient;
 import org.springframework.data.neo4j.core.schema.Node;
-import org.springframework.data.neo4j.core.schema.Relationship;
 
 @Node(primaryLabel = "Movie")
-public class MovieEntity extends AbstractBase  implements Identifiable {
+public class MovieEntity extends AbstractBase {
 
 	private final String title;
 
 	private Integer released;
-
-	@Transient
-	@Relationship(direction = Relationship.Direction.INCOMING, type = "DIRECTED")
-	private List<PersonEntity> directors;
 
 	public MovieEntity(String title) {
 		this.title = title;
