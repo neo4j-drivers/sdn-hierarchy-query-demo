@@ -16,7 +16,7 @@ public class Config {
 	@Bean
 	CommandLineRunner demo2(PersonRepository personRepository) {
 		return args -> {
-			System.out.println("Variant 1 (Abstract Base + Iface)");
+			System.out.println("Relating to a generic class");
 			personRepository.findOneByName("Keanu Reeves")
 				.ifPresent(p -> {
 					System.out.println(p.getName());
