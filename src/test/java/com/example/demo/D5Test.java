@@ -7,8 +7,8 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @Import(ContainerConfig.class)
-@ActiveProfiles("d4")
-public class Profile4Test {
+@ActiveProfiles("d5")
+public class D5Test {
 
 	@Test
 	void contextBoots() {
